@@ -34,7 +34,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll(
-    '.achievement-card, .timeline-item, .gallery-item, .section-label, .section-title, .featured-section, .agency-block, footer'
+    '.achievement-card, .timeline-item, .gallery-item, .section-label, .section-title, .featured-section, .agency-block, .hobby-card, footer'
 ).forEach(el => revealObserver.observe(el));
 
 /* ── Crown click — particle burst ── */
