@@ -34,6 +34,39 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+/* ── TWEMOJI — cross-platform emoji images ── */
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 0.05em 0 0.1em;
+    vertical-align: -0.15em;
+    display: inline-block;
+    pointer-events: none;
+}
+
+/* Large icon elements keep their font-size as the size reference */
+.card-icon img.emoji,
+.hobby-icon img.emoji,
+.crown-icon img.emoji,
+.crown-display img.emoji,
+.agency-icon img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0;
+    vertical-align: middle;
+}
+
+/* Badge / label emojis sit nicely inline */
+.badge img.emoji,
+.section-label img.emoji,
+.card-status img.emoji,
+.footer-insta img.emoji {
+    height: 1em;
+    width: 1em;
+    vertical-align: -0.1em;
+    margin-right: 2px;
+}
+
 /* ── Global emoji font fix (GitHub Pages / Linux rendering) ── */
 .card-icon,
 .hobby-icon,
