@@ -34,6 +34,31 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+/* ── Global emoji font fix (GitHub Pages / Linux rendering) ── */
+.card-icon,
+.hobby-icon,
+.crown-icon,
+.crown-display,
+.badge,
+.section-label,
+.card-status,
+.agency-icon,
+.footer-insta,
+.hero-badges,
+.scroll-hint {
+    font-family: 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji',
+                 'Android Emoji', 'EmojiOne Color', 'Twemoji Mozilla',
+                 'Segoe UI Symbol', sans-serif;
+}
+
+/* Ensure inline emoji in text elements still render correctly */
+p, h1, h2, h3, span, div {
+    font-family: inherit;
+}
+p .emoji, span.emoji {
+    font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+}
+
 /* ── STARFIELD ── */
 .starfield {
     position: fixed;
