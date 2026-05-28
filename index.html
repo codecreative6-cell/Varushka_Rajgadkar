@@ -79,11 +79,11 @@
 
         <div class="gallery">
             <div class="gallery-item">
-                <img src="img(1).webp" alt="Varushka Rajgadkar — Crown Portrait" />
+                <img src="img_1_.webp" alt="Varushka Rajgadkar — Crown Portrait" />
                 <div class="gallery-overlay">Crown Portrait</div>
             </div>
             <div class="gallery-item">
-                <img src="img(2).webp" alt="Varushka Rajgadkar — Side Profile" />
+                <img src="img_2_.webp" alt="Varushka Rajgadkar — Side Profile" />
                 <div class="gallery-overlay">Side Profile</div>
             </div>
         </div>
@@ -209,7 +209,8 @@
     <script src="script.js"></script>
 
     <!-- Twemoji: replaces all emoji chars with cross-platform SVG images -->
-    <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+    <!-- Pinned to 14.0.2 — both the library and assets must match to avoid random breakage -->
+    <script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
     <script>
         window.addEventListener('load', function () {
             twemoji.parse(document.body, {
